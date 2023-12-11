@@ -1,17 +1,18 @@
 var cacheName = 'pure_plot';
 var filesToCache = [
-  './',
-  './index.html',
-  './pure_plot.js',
-  './pure_plot_bg.wasm',
+    './',
+    './index.html',
+    './pure_plot.js',
+    './pure_plot_bg.wasm',
 ];
 
 self.addEventListener('install', function (e) {
-  e.waitUntil(
-    caches.open(cacheName).then(function (cache) {
-      return cache.addAll(filesToCache);
-    })
-  );
+    e.waitUntil(
+        caches.open(cacheName).then(function (cache) {
+            console.log('[ServiceWorker] Caching app shell');
+            return cache.addAll(filesToCache);
+        })
+    );
 });
 
 /* Serve cached content when offline
