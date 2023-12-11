@@ -1,6 +1,6 @@
 {
-  "name": "Pure salary pwa",
-  "short_name": "pure-salary-pwa",
+  "name": "Pure salary calculator pwa",
+  "short_name": "Pure salary",
   "icons": [
     {
       "src": "./icon-270x270.png",

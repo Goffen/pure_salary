@@ -13,7 +13,7 @@ fn main() -> eframe::Result<()> {
         ..Default::default()
     };
     eframe::run_native(
-        "Pure plot",
+        "Pure salary calculator",
         native_options,
         Box::new(|cc| Box::new(pure_plot::PurePlotApp::new(cc))),
     )
